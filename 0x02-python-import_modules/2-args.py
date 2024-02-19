@@ -1,15 +1,19 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-
     import sys
 
-    leng = len(sys.argv) - 1
-    if leng == 1:
-        print("1 argument:")
-    elif leng == 0:
+    num_of_arg = len(sys.argv)
+
+    list_of_arg = list(sys.argv)
+
+    if num_of_arg == 1:
         print("0 arguments.")
-    else:
-        print("{} arguments:".format(leng))
-    for n in range(leng):
-        print("{}: {}".format(n + 1, sys.argv[n + 1]))
+    elif num_of_arg == 2:
+        print("{} argument:\n{}: {}".format(1, 1, list_of_arg[1]))
+    elif num_of_arg > 2:
+        print("{} arguments:".format(num_of_arg - 1))  # excluding filename
+
+        for arg in range(1, num_of_arg):
+
+            print("{}: {}".format(arg, list_of_arg[arg]))
