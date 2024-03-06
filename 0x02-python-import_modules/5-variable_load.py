@@ -6,5 +6,6 @@ def var_val():
 
     print(a)
 
-    if __name__ == "__main__":
+if __name__ == "__main__":
+
         var_val()
