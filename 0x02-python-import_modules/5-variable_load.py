@@ -2,7 +2,7 @@
 
 from variable_load_5 import a
 
-def var_val():
+def return_var():
     print(a)
 if __name__ == "__main__":
-        var_val()
+        return_var()
