@@ -7,7 +7,6 @@ def square_matrix_simple(matrix=[]):
 
     for sq_matrix in range(len(matrix)):
 
-
         new_matrix[sq_matrix] = list(map(lambda x: x**2, matrix[sq_matrix]))
 
     return (new_matrix)
